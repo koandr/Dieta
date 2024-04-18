@@ -92,7 +92,7 @@ def create_button(txt, comm, xcoord, ycoord):
 create_button("Ввести", sql_insert, 20, 80)
 create_button("Корегувати", sql_update, 100, 80)
 create_button("Видалити", sql_del, 260, 80)
-create_button("Друк", sql_print, 350, 80)
+create_button("Показати", sql_print, 350, 80)
 
 label_input_name = Label(text="введіть найменування :").place(x=18, y=30)
 entry_input_name = Entry(window, width=25)

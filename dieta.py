@@ -14,7 +14,7 @@ try:
 except Error as e:
     messagebox.showinfo("  ", f"'{e}', Помилка бази даних ")
 
-tree = ttk.Treeview(columns=("Name", "Calories"), show="headings")
+tree = ttk.Treeview(columns=("Name", "Weight"), show="headings")
 
 
 cursor_obj = con.cursor()

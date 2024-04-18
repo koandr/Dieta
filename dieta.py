@@ -132,9 +132,9 @@ def selection():
 
 def show():
     global tree
-    tree = ttk.Treeview(columns=("Name", "Calories"), show="headings")
+    tree = ttk.Treeview(columns=("Name", "Weight"), show="headings")
     tree.heading("Name", text="Найменування", anchor=W)
-    tree.heading("Calories", text="Калорійність", anchor=W)
+    tree.heading("Weight", text="Вага", anchor=W)
     tree.place(x=20, y=250)
     scrollbar = ttk.Scrollbar(orient=VERTICAL, command=tree.yview)
     tree.configure(yscrollcommand=scrollbar.set)
@@ -153,9 +153,9 @@ def clear_all():
     catalog_calories.clear()
     catalog_selecting.clear()
     global tree
-    tree = ttk.Treeview(columns=("Name", "Calories"), show="headings")
+    tree = ttk.Treeview(columns=("Name", "Weight"), show="headings")
     tree.heading("Name", text="Найменування", anchor=W)
-    tree.heading("Calories", text="Калорійність", anchor=W)
+    tree.heading("Weight", text="Вага", anchor=W)
     tree.place(x=20, y=250)
 
 
